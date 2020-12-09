@@ -1,7 +1,9 @@
 import random
 
+
 def encode(string):
-    output = [str(int(i) ** 3) if i.isdigit() else str(ord(i)) if i.isalpha() and i.islower() else str(random.randint(1, 5)) if i.isalpha() and i.isupper() else "-" for i in string]
+    output = [str(int(i) ** 3) if i.isdigit() else str(ord(i)) if i.isalpha() and i.islower() else str(
+        random.randint(1, 5)) if i.isalpha() and i.isupper() else "-" for i in string]
     # output = [  else i for i in output]
     # output = [ else i for i in output]
     # output = ['-' if not i.isalnum() else i for i in output]
