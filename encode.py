@@ -1,5 +1,4 @@
 import random
-import math
 
 def encode(string):
     output = [str(int(i) ** 3) if i.isdigit() else str(ord(i)) if i.isalpha() and i.islower() else str(random.randint(1, 5)) if i.isalpha() and i.isupper() else "-" for i in string]
